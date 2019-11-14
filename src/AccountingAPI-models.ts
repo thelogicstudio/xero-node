@@ -74,6 +74,26 @@ export interface BankTransfer {
 	History?: HistoryRecord[];
 }
 
+export interface BatchPayment {
+	BatchPaymentID?: string;
+	UpdatedDateUTC?: string;
+	DateString?: string;
+	Date?: string;
+	Payments?: Payment[];
+	Account?: {
+		AccountID?: string;
+	};
+	TotalAmount?: number;
+	Type?: string;
+	Particulars?: string;
+	Code?: string;
+	Reference?: string;
+	Details?: string;
+	Narrative?: string;
+	IsReconciled?: boolean;
+	History?: HistoryRecord[];
+}
+
 export interface Payment {
 	PaymentID?: string;
 	Date?: string;
